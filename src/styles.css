@@ -1,4 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: teal;
   color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav {
+  background-color: blue;
+  height: 100px;
+}
+
+nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+}
+
+nav button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: aquamarine;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
