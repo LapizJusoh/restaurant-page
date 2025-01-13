@@ -38,6 +38,17 @@ nav button:hover {
 
 #content {
   display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stuff {
+  background-color: brown;
+  margin-block: 30px;
+  width: 400px;
+  height: 400px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
