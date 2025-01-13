@@ -1,34 +1,26 @@
 import "./styles.css";
+import addHome from "./home.js";
+import addMenu from "./menu.js";
+import addContact from "./contact.js";
 
-(() => {
-  const content = document.querySelector("#content");
-  const div = document.createElement("div");
-  const p = document.createElement("p");
-  
-  div.className = "stuff";
-  p.innerHTML = `This is Home!`;
-  content.appendChild(div);
-  div.appendChild(p);
-})();
+const content = document.querySelector("#content");
 
-(() => {
-  const content = document.querySelector("#content");
-  const div = document.createElement("div");
-  const p = document.createElement("p");
-  
-  div.className = "stuff";
-  p.innerHTML = `This is Menu!`;
-  content.appendChild(div);
-  div.appendChild(p);
-})();
+const homeBtn = document.querySelector("#home-btn");
+const menuBtn = document.querySelector("#menu-btn");
+const contactBtn = document.querySelector("#contact-btn");
 
-(() => {
-  const content = document.querySelector("#content");
-  const div = document.createElement("div");
-  const p = document.createElement("p");
-  
-  div.className = "stuff";
-  p.innerHTML = `This is Contact Us!`;
-  content.appendChild(div);
-  div.appendChild(p);
-})();
+addHome();
+homeBtn.addEventListener("click", () => {
+  content.removeChild(content.lastElementChild);
+  addHome();
+});
+
+menuBtn.addEventListener("click", () => {
+  content.removeChild(content.lastElementChild);
+  addMenu();
+});
+
+contactBtn.addEventListener("click", () => {
+  content.removeChild(content.lastElementChild);
+  addContact();
+});
