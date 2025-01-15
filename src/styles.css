@@ -36,6 +36,10 @@ nav button:hover {
   background-color: aquamarine;
 }
 
+.active {
+  background-color: aquamarine;
+}
+
 #content {
   display: flex;
   flex-flow: column;
